@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.dashed-space {
+    border-style: dashed;
+    /* makes it dashed */
+    border-width: 2px;
+    /* thickness */
+    border-radius: 1rem;
+    /* rounded corners */
+    border-color: rgba(255, 0, 0, 0.15);
+    /* fallback color */
+    border-image: repeating-linear-gradient(to right,
+            rgba(255, 39, 39,0.15) 0,
+            rgba(230, 74, 74, 0.5) 20px,
+            /* dash length */
+            transparent 40px,
+            /* start of gap */
+            transparent 20px
+            /* gap length */
+        ) 1;
+}
